@@ -18,6 +18,10 @@ namespace JackHenry.Twitter.Tests
 
         private DummyData() { }
 
+        public string Id { get => "12345"; }
+        public string Tag { get => "NFL Tag"; }
+        public string Value { get => "Franchise"; }
+
         public IOptions<RuleConfiguration> RuleConfig
         {
             get{
@@ -56,9 +60,22 @@ namespace JackHenry.Twitter.Tests
             get
             {
                 var ruleList = new List<RuleResult>();
+                ruleList.Add(new RuleResult
+                {
+                    Id = Id.ToString(),
+                    Tag = Tag,
+                    Value = Value
+                });
                 var ruleResults = new RuleResults();
                 ruleResults.Data = ruleList;
                 return ruleResults;
+            }
+        }
+        public RuleResults EmptyRuleResults
+        {
+            get
+            {
+                return null;
             }
         }
     }

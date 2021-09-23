@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "JackHenry.Twitter": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Key": "Value",
+        "TwitterBearerTokenKeyName": "Authorization",
+        "TwitterBearerToken": "Bearer AAAAAAAAAAAAAAAAAAAAAKd7TwEAAAAA0UaQKg13uiwVY%2B96a3V%2FsIyiusk%3DOAzQ4wMtmvUyQSqhKokJuLQaVkrArCFmPJzSOyl3KDAkNtygyS"
+      }
+    }
+  }
+}

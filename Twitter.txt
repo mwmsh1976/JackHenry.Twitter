@@ -1,0 +1,20 @@
+PROJECT
+Jack Henry
+
+APP
+JHStreamSample
+
+API KEY
+StrQXHc1xRPw440dEHLsZIgLN
+
+API KEY SECRET
+vB9qJzhLCbgivpmswglkPUHaBWtSG2kZhAyFxRrMjJrERIlPy6
+
+BEARER TOKEN
+AAAAAAAAAAAAAAAAAAAAAKd7TwEAAAAA0UaQKg13uiwVY%2B96a3V%2FsIyiusk%3DOAzQ4wMtmvUyQSqhKokJuLQaVkrArCFmPJzSOyl3KDAkNtygyS
+
+CALL
+curl -X GET -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAKd7TwEAAAAA0UaQKg13uiwVY%2B96a3V%2FsIyiusk%3DOAzQ4wMtmvUyQSqhKokJuLQaVkrArCFmPJzSOyl3KDAkNtygyS" "https://api.twitter.com/2/tweets/sample/stream"
+
+CALL: EXTENDED FIELDS
+curl -X GET -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAKd7TwEAAAAA0UaQKg13uiwVY%2B96a3V%2FsIyiusk%3DOAzQ4wMtmvUyQSqhKokJuLQaVkrArCFmPJzSOyl3KDAkNtygyS" "https://api.twitter.com/2/tweets/sample/stream?tweet.fields=created_at&expansions=author_id&user.fields=created_at"

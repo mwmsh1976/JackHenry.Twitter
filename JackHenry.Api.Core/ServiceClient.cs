@@ -19,18 +19,11 @@ namespace JackHenry.Api.Core
             this._clientName = clientName;
         }
 
-        public async Task<T> GetAsync<T>(string endpoint, List<KeyValuePair<string, string>> headers = null)
+        public async Task<T> GetAsync<T>(string endpoint)
         {
             T data;
             _client = _httpClientFactory.CreateClient(_clientName);
             _client.Timeout = new TimeSpan(0, 0, 0, 10, 0);
-            if (headers != null)
-            {
-                foreach (KeyValuePair<string, string> header in headers)
-                {
-                    _client.DefaultRequestHeaders.Add(header.Key, header.Value);
-                }
-            }
             try
             {
                 using HttpResponseMessage response = await _client.GetAsync(endpoint);

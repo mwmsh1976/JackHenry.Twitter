@@ -10,6 +10,6 @@ namespace JackHenry.Api.Core.Interfaces
         Task<T> DeleteAsync<T>(string endpoint);
         Task<T> PostAsync<T>(string endpoint, HttpContent postContent);
         Task<T> PutAsync<T>(string endpoint, HttpContent putContent);
-        Task<T> GetAsync<T>(string endpoint, List<KeyValuePair<string, string>> headers = null);
+        Task<T> GetAsync<T>(string endpoint);
     }
 }
